@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Pro – Démo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="lp-header">
+    <div class="lp-container">
+      <a class="lp-brand" href="../../index.html">← Portfolio</a>
+      <nav class="lp-nav"><a href="#features">Fonctionnalités</a><a href="#cta">Commencer</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="lp-hero">
+      <div class="lp-container hero-inner">
+        <h1 class="reveal">Landing Pro</h1>
+        <p class="reveal">Une page d’atterrissage légère, optimisée SEO, avec animations subtiles.</p>
+        <a class="lp-btn reveal" href="#cta">Démarrer</a>
+      </div>
+    </section>
+    <section id="features" class="lp-container lp-features">
+      <article class="lp-card reveal"><h3>Vitesse</h3><p>Score Lighthouse élevé grâce à un CSS minimal et lazy‑loading.</p></article>
+      <article class="lp-card reveal"><h3>Accessibilité</h3><p>Contraste optimal, focus visibles, balises ARIA.</p></article>
+      <article class="lp-card reveal"><h3>SEO</h3><p>Balises meta, structure sémantique et contenu pertinent.</p></article>
+    </section>
+    <section id="cta" class="lp-cta">
+      <div class="lp-container">
+        <h2 class="reveal">Prêt à lancer ?</h2>
+        <a class="lp-btn reveal" href="../../index.html">Revenir au portfolio</a>
+      </div>
+    </section>
+  </main>
+  <script>
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      })
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.reveal').forEach(el=>{
+      el.style.opacity='0';
+      el.style.transform='translateY(16px)';
+      el.style.transition='opacity .6s ease, transform .6s ease';
+      io.observe(el);
+    });
+    const style = document.createElement('style');
+    style.textContent = '.reveal.in{opacity:1 !important; transform:none !important}';
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>

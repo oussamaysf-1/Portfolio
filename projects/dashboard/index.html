@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard – Démo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="db-header">
+    <div class="db-container">
+      <a class="db-brand" href="../../index.html">← Portfolio</a>
+      <h1>Dashboard Analytics</h1>
+    </div>
+  </header>
+  <main class="db-container">
+    <section class="db-grid">
+      <div class="db-card">
+        <h3>Revenus mensuels</h3>
+        <canvas id="line"></canvas>
+      </div>
+      <div class="db-card">
+        <h3>Répartition des ventes</h3>
+        <canvas id="doughnut"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio – YOUSI Oussama</title>
+    <meta name="description" content="Portfolio moderne et responsive – Projets, compétences, et contact." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#accueil" class="logo" aria-label="Aller à l’accueil">VN</a>
+        <nav class="nav" aria-label="Navigation principale">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul id="menu" class="menu">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" aria-label="Basculer le mode sombre" title="Mode sombre">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="accueil" class="section hero" aria-label="Section d’accueil">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Salut,
+                 je suis <span class="accent">YOUSFI Oussama</span></h1>
+            <p class="lead">Développeur web front‑end passionné par l’UX, l’accessibilité et les performances.
+            J’aide à concevoir et construire des interfaces élégantes et efficaces.</p>
+            <div class="cta">
+              <a class="btn primary" href="#projets">Voir mes projets</a>
+              <a class="btn ghost" href="assets/cv.pdf" download>Télécharger mon CV</a>
+            </div>
+            <div class="hero-meta">
+              <span>Disponible pour missions freelance</span>
+              <span class="dot"></span>
+              <span>Basé à Votre Ville</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="card-tilt">
+              <div class="dev-card">
+                <div class="card-row">
+                  <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span>
+                </div>
+                <div class="graph">
+                  <span style="--p:80%"></span>
+                  <span style="--p:65%"></span>
+                  <span style="--p:90%"></span>
+                  <span style="--p:70%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="apropos" class="section about" aria-label="À propos">
+        <div class="container grid-2">
+          <div>
+            <h2>À propos</h2>
+            <p>Je conçois des interfaces centrées sur l’utilisateur en privilégiant la simplicité, la performance et l’accessibilité. J’adore transformer des idées en produits concrets et maintenables.</p>
+            <ul class="checks">
+              <li>Interfaces modernes et responsives</li>
+              <li>Performance web et SEO technique</li>
+              <li>Accessibilité (WCAG) et bonnes pratiques</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <div class="kpi"><span class="kpi-num">4+</span><span class="kpi-label">années d’expérience</span></div>
+            <div class="kpi"><span class="kpi-num">25+</span><span class="kpi-label">projets livrés</span></div>
+            <div class="kpi"><span class="kpi-num">100%</span><span class="kpi-label">satisfaction client</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="competences" class="section skills" aria-label="Compétences">
+        <div class="container">
+          <h2>Compétences</h2>
+          <div class="chips">
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Vue</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">REST</span>
+            <span class="chip">Tailwind / CSS</span>
+            <span class="chip">Git / CI</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="section projects" aria-label="Projets">
+        <div class="container">
+          <h2>Projets</h2>
+          <div class="cards">
+            <article class="card">
+              <div class="card-media preview" data-src="projects/shopx/index.html" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>ShopX</h3>
+                <p>E‑commerce performant avec filtrage, panier et paiement simulé.</p>
+                <div class="tags">
+                  <span>React</span><span>Stripe (mock)</span><span>Tailwind</span>
+                </div>
+                <div class="actions">
+                  <a href="projects/shopx/" class="btn small">Démo</a>
+                  <a href="#" class="btn small ghost" title="Code à venir">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media preview alt" data-src="projects/dashboard/index.html" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>DashBoard</h3>
+                <p>Tableau de bord analytique avec graphes et export.
+                </p>
+                <div class="tags">
+                  <span>Vue</span><span>Charts</span><span>API</span>
+                </div>
+                <div class="actions">
+                  <a href="projects/dashboard/" class="btn small">Démo</a>
+                  <a href="#" class="btn small ghost" title="Code à venir">Code</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-media preview tri" data-src="projects/landing/index.html" aria-hidden="true"></div>
+              <div class="card-body">
+                <h3>Landing Pro</h3>
+                <p>Landing page optimisée SEO avec animations légères.</p>
+                <div class="tags">
+                  <span>Vanilla JS</span><span>SEO</span><span>Perf</span>
+                </div>
+                <div class="actions">
+                  <a href="projects/landing/" class="btn small">Démo</a>
+                  <a href="#" class="btn small ghost" title="Code à venir">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact enhanced" aria-label="Contact">
+        <div class="container grid-2 contact-grid">
+          <div>
+            <h2>Travaillons ensemble</h2>
+            <p>Un projet en tête ? Envoyez‑moi un message et discutons de vos besoins. Je réponds en général sous 24h.</p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:hello@votrenom.dev">oussama@gmail.com</a></li>
+              <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/oussama yousfi</a></li>
+              <li><strong>GitHub:</strong> <a href="#">github.com/oussama yousfi</a></li>
+            </ul>
+          </div>
+          <form class="contact-form pretty" id="contactForm" action="#" method="get">
+            <label>Nom
+              <input type="text" name="name" required placeholder="Votre nom" />
+            </label>
+            <label>Email
+              <input type="email" name="email" required placeholder="votre@email.com" />
+            </label>
+            <label>Message
+              <textarea name="message" rows="5" required placeholder="Parlez‑moi de votre projet…"></textarea>
+            </label>
+            <button class="btn primary full" type="submit">Envoyer le message</button>
+          </form>
+        </div>
+        <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Votre Nom — Tous droits réservés.</p>
+        <div class="socials" aria-label="Réseaux sociaux">
+          <a href="#" aria-label="GitHub" title="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.04 1.53 1.04.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.13-4.56-5.03 0-1.11.39-2.02 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.04a9.2 9.2 0 015 0c1.91-1.31 2.75-1.04 2.75-1.04.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.74 0 3.91-2.34 4.77-4.57 5.02.36.32.67.93.67 1.88 0 1.36-.01 2.45-.01 2.79 0 .27.18.59.69.48A10.02 10.02 0 0022 12.26C22 6.58 17.52 2 12 2z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5H3.56v11h3.38v-11zM5.25 3.5A1.94 1.94 0 103.3 5.44 1.94 1.94 0 005.25 3.5zM20.5 13.34c0-3.07-1.64-4.5-3.82-4.5a3.3 3.3 0 00-3 1.65v-1.4H10.3v11h3.38v-6.12c0-1.62.31-3.19 2.32-3.19 1.98 0 2 1.85 2 3.29v6.02h3.38v-6.75z"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>

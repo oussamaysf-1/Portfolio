@@ -1,0 +1,11 @@
+:root { --bg:#0b0f14; --text:#e6edf3; --muted:#9fb0c0; --card:#0f1621; --border:#1c2430; --primary:#6ee7ff; }
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,Segoe UI,Roboto,Arial,sans-serif}
+.db-container{width:min(1100px,92%);margin:0 auto}
+.db-header{position:sticky;top:0;border-bottom:1px solid var(--border);background:linear-gradient(180deg,rgba(0,0,0,.35),transparent);backdrop-filter:blur(8px)}
+.db-header>.db-container{display:flex;align-items:center;gap:12px;padding:12px 0}
+.db-brand{color:var(--text);text-decoration:none;font-weight:700}
+.db-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:18px 0}
+.db-card{border:1px solid var(--border);border-radius:16px;background:var(--card);padding:14px}
+h1{font-size:24px;margin:0}
+h3{margin:0 0 8px}
+@media(max-width:800px){.db-grid{grid-template-columns:1fr}}

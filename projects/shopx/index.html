@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopX – Démo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="sx-header">
+    <div class="sx-container">
+      <a href="../../index.html" class="sx-brand">← Retour</a>
+      <nav class="sx-nav">
+        <button data-filter="all" class="sx-chip active">Tous</button>
+        <button data-filter="Men" class="sx-chip">Homme</button>
+        <button data-filter="Women" class="sx-chip">Femme</button>
+        <button data-filter="Accessories" class="sx-chip">Accessoires</button>
+      </nav>
+      <button class="sx-cart" id="openCart" aria-label="Panier">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 3h2l.4 2M7 13h9l3-8H6.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="9" cy="19" r="1.6" fill="currentColor"/>
+          <circle cx="17" cy="19" r="1.6" fill="currentColor"/>
+        </svg>
+        <span id="cartCount" class="sx-badge">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="sx-container">
+    <h1 class="sx-title">ShopX – Mini boutique</h1>
+    <p class="sx-sub">Filtrez par catégorie et ajoutez au panier.</p>
+    <section class="sx-grid" id="grid"></section>
+  </main>
+
+  <aside class="sx-drawer" id="cartDrawer" aria-hidden="true" aria-label="Panier">
+    <div class="sx-drawer-inner">
+      <div class="sx-drawer-head">
+        <strong>Votre panier</strong>
+        <button id="closeCart" class="sx-close" aria-label="Fermer">✕</button>
+      </div>
+      <div id="cartItems" class="sx-cart-items"></div>
+      <div class="sx-drawer-foot">
+        <div class="sx-total">Total: <span id="cartTotal">0 €</span></div>
+        <button id="checkout" class="sx-checkout">Valider la commande</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
